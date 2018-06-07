@@ -1,4 +1,7 @@
 #!/usr/bin/env scala
 
-println("Hello, world")
+if (args.isEmpty)
+  println("Hello, world")
+else
+  println(s"Hello, ${args mkString " "}")
 

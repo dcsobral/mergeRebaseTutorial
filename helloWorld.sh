@@ -1,3 +1,8 @@
 #!/bin/sh
 
-echo "Hello, World"
+if [[ $# -eq 0 ]]
+then
+	echo "Hello, World"
+else
+	echo "Hello, $*"
+fi
